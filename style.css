@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#9e7ddc,#bc97d9);
+    font-family: "poppins",serif;
+}
+.mainbox{
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#1a2344,#8a4dad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+.weather{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.forecasts{
+    font-size: 50px;
+    font-weight: 300;
+    color: #DDB130;
+}
+.start,.homebtn{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #DDB130;
+    color: black;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+.start:hover,.homebtn:hover{
+    background: #f4c842;
+    transform: scale(1.02);
+    transform-origin: all 0.1s ease-in-out;
+}
+.searchbox{
+    height: 40px;
+    width: 280px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.searchbox input{
+    width: 230px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding-left:10px; 
+}
+.img{
+    display: flex;
+    align-items: center;
+}
+.img img{
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.iconbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iconbox img{
+    width: 180px;
+}
+.tempbox{
+    height: 100px;
+    width: 280px;
+    text-align: center;
+}
+#temp{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+#city{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.extradetails{
+    height: 100px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wind,.humidity{
+    display: flex;
+    align-items: center;
+}
+#windicon,#humidityicon{
+    width: 50px;
+    margin-right: 5px;
+}
+#windspeed,#humiduityper{
+    font-weight: bold;
+}
+#info{
+    font-size: 11px;
+    margin-bottom: 5px;
+
+}
+.inactive{
+    display: none;
+}
