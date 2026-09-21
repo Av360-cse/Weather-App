@@ -36,7 +36,7 @@ const url="https://api.openweathermap.org/data/2.5/weather?";
 const apikey="41847ea85df2e3be8daee23caadb551b";
 async function getweatherdata(city) {
     let finalurl=`${url}q=${city}&appid=${apikey}`;
-    let weatherdata=await fetch(finalurl).then(res=>res.json());
+    let weatherdata= await fetch(finalurl).then(res=>res.json());
     console.log(weatherdata);
 
 if (weatherdata.cod == 404) {
